@@ -126,7 +126,7 @@
 
       //觀測集合變化，寫入 localStorage
       const todosString = localStorage.getItem("todos");
-      const todos = todosString ? JSON.parse(todosString) : {};
+      const todos = todosString ? JSON.parse(todosString) : [{}];
 
       createApp({
         setup() {
